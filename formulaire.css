@@ -1,0 +1,27 @@
+html, body {
+    margin: 0;
+    padding : 0;
+    overflow: hidden;
+    font-family: Poppins;
+}
+
+
+#slide {
+
+background-color: lightpink;
+width: 200vw; 
+height: 100vh;
+transition: 1s;
+    
+}
+
+section {
+    
+    width: 50%;
+    height: 100%;
+    display: flex;
+    float: left;
+    justify-content: center;
+    text-align: center;
+}
+

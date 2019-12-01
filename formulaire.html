@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    
+    
+    <head>
+    
+<title>Se connecter</title>
+    <meta charset="utf-8" />
+	<meta name="description" content="">
+	<link rel="stylesheet" type="text/css" href="formulaire.css">
+    <meta name="author" content="Jeslie">
+      
+
+    </head>   
+        
+    <body>
+        
+<div id ="slide">
+        
+<section> 
+<div id="page1">     
+
+        
+            
+            
+    <H2> SE CONNECTER </H2>
+       
+<BR>
+<BR>
+<BR>
+        
+    <LABEL>Entrer votre adresse mail </LABEL>
+    <INPUT TYPE="text" placeholder="Entrer l'adresse e-mail " name="mail" required NAME="nom_du_champ" SIZE="25"
+MAXLENGTH="70">  
+                        
+<BR>
+<BR>
+    
+ <LABEL>Choisissez un nom d'utilisateur</LABEL>
+    <INPUT TYPE="text" placeholder="Entrer le nom d'utilisateur " name="utilisateur" required NAME="nom_du_champ" SIZE="25"
+MAXLENGTH="70">  
+                        
+<BR>
+<BR>
+        
+        <label>Entrer un mot de passe :</label>
+    <input type="text" id="mdp" placeholder="Minimum 8 caractères" oninput="caracteres()"> 
+      <br>
+      <br>
+    
+	<button id="bouton" onclick="bouton()" type="button">S'inscrire</button>
+    <br>
+    <br>
+    <div id="message"> 
+    </div>
+        
+</div> 
+</section>
+    
+<section> 
+           
+<div id="page2"> 
+    
+ <H2> Votre inscription a été validée </H2>
+          
+</div>
+   </section>     
+</div> 
+    
+   <script type="text/javascript">
+    
+       
+    function bouton() {
+        
+var caracteresmax = document.getElementById('mdp').value.length;        
+if (caracteresmax>=8){
+    
+document.getElementById("slide").style.marginLeft = "-100%";
+    
+    }
+else {
+       var non = "Veuillez entrer un mot de passe avec au moins 8 caractères"
+            document.getElementById('message').innerHTML = non;
+    }
+}
+
+    
+    </script>
+    </body>
+    </html>
